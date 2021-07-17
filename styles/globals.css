@@ -2982,7 +2982,9 @@ hr {
 }
 
 .header-transparent {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
+  background-color: #4256a4a2;
   top: 0;
   right: 0;
   left: 0;
@@ -3296,7 +3298,9 @@ hr {
 }
 
 .header-transparent {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
+  background-color: #4256a4a2;
   top: 0;
   right: 0;
   left: 0;
@@ -3491,9 +3495,9 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: flex-start;
+      -ms-flex-pack: flex-start;
+          justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -3631,9 +3635,9 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: flex-start;
+      -ms-flex-pack: flex-start;
+          justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -3771,9 +3775,9 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: flex-start;
+      -ms-flex-pack: flex-start;
+          justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -6359,9 +6363,9 @@ hr {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: start;
+  -webkit-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
 }
 
 .theme-colors, .header-sticky.sticky-bar {
