@@ -65,8 +65,8 @@ export default function Home({ tableData, SEO }) {
                   <div className="blog_right_sidebar">
                      <aside className="single_sidebar_widget popular_post_widget">
                         <h3 className="widget_title" style={{color: '#2d2d2d'}}>Rp. <span>{tableData.harga}</span></h3>
-                        <button className="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                           type="submit">Beli</button>
+                        <a target="_blank" rel="noreferrer noopener" href={`https://api.whatsapp.com/send?phone=6285123931123&text=Halo%20Admin,%0AApakah%20barang%20${tableData.nama}%20masih%20ready%20stock%3F`} className="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
+                           type="submit">Beli</a>
                      </aside>
 
                   </div>
@@ -114,7 +114,7 @@ export async function getStaticProps({ params }) {
     openGraph: {
       type: "website",
       locale: "id_ID",
-      url: "https://desa-rejo.com",
+      url: "https://web-desa-rejo.vercel.app",
       title,
       site_name: "desa-rejo",
     },
