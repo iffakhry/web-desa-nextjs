@@ -1,6 +1,7 @@
 import { Fragment, useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
+import Script from 'next/script'
 import { useRouter } from "next/router";
 
 const Nav = ({ children, seoData, isNoIndex }) => {
@@ -23,7 +24,6 @@ const Nav = ({ children, seoData, isNoIndex }) => {
         {/* SEO Begin  */}
         <title>{`${seoData?.title}`}</title>
         <meta charset="utf-8"/>
-        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico"/>
 
@@ -75,46 +75,46 @@ const Nav = ({ children, seoData, isNoIndex }) => {
         <link rel="stylesheet" href="/css/nice-select.css"/>
         {/* CSS End */}
 
-        <script src="/js/vendor/modernizr-3.5.0.min.js"></script>
+        {/* <script defer src="/js/vendor/modernizr-3.5.0.min.js"></script> */}
     
-        <script src="/js/vendor/jquery-1.12.4.min.js"></script>
-        <script src="/js/popper.min.js"></script>
-        <script src="/js/bootstrap.min.js"></script>
+        {/* <script src="/js/vendor/jqin.js"></script>
+        <script defer src="/js/bootstuery-1.12.4.min.js"></script>
+        <script defer src="/js/popper.mrap.min.js"></script> */}
         
-        <script src="/js/jquery.slicknav.min.js"></script>
+        {/* <script defer src="/js/jquery.slicknav.min.js"></script> */}
 
         
-        <script src="/js/owl.carousel.min.js"></script>
-        <script src="/js/slick.min.js"></script>
+        {/* <script defer src="/js/owl.carousel.min.js"></script>
+        <script defer src="/js/slick.min.js"></script> */}
         
-        <script src="/js/wow.min.js"></script>
-        <script src="/js/animated.headline.js"></script>
-        <script src="/js/jquery.magnific-popup.js"></script>
+        {/* <script defer src="/js/wow.min.js"></script>
+        <script defer src="/js/animated.headline.js"></script>
+        <script defer src="/js/jquery.magnific-popup.js"></script> */}
 
         
-        <script src="/js/gijgo.min.js"></script>
+        {/* <script defer src="/js/gijgo.min.js"></script> */}
         
-        <script src="/js/jquery.nice-select.min.js"></script>
-        <script src="/js/jquery.sticky.js"></script>
+        {/* <script defer src="/js/jquery.nice-select.min.js"></script>
+        <script defer src="/js/jquery.sticky.js"></script> */}
         
-        <script src="/js/jquery.barfiller.js"></script>
+        {/* <script defer src="/js/jquery.barfiller.js"></script> */}
 
         
-        <script src="/js/jquery.counterup.min.js"></script>
-        <script src="/js/waypoints.min.js"></script>
-        <script src="/js/jquery.countdown.min.js"></script>
-        <script src="/js/hover-direction-snake.min.js"></script>
+        {/* <script defer src="/js/jquery.counterup.min.js"></script>
+        <script defer src="/js/waypoints.min.js"></script>
+        <script defer src="/js/jquery.countdown.min.js"></script>
+        <script defer src="/js/hover-direction-snake.min.js"></script> */}
 
         
-        <script src="/js/contact.js"></script>
-        <script src="/js/jquery.form.js"></script>
-        <script src="/js/jquery.validate.min.js"></script>
-        <script src="/js/mail-script.js"></script>
-        <script src="/js/jquery.ajaxchimp.min.js"></script>
+        {/* <script src="/js/contact.js"></script>
+        <script defer src="/js/jquery.form.js"></script>
+        <script defer src="/js/jquery.validate.min.js"></script>
+        <script defer src="/js/mail-script.js"></script>
+        <script defer src="/js/jquery.ajaxchimp.min.js"></script> */}
 
             
-        <script src="/js/plugins.js"></script>
-        <script src="/js/main.js"></script>
+        {/* <script defer src="/js/plugins.js"></script>
+        <script defer src="/js/main.js"></script> */}
     </Head>
     <header>
         <div className="header-area header-transparent">
@@ -205,9 +205,9 @@ const Nav = ({ children, seoData, isNoIndex }) => {
         
       </div>
     </footer> 
-    <div id="back-top" >
+    {/* <div id="back-top" >
         <a title="Go to Top" href="#"> <i className="fas fa-level-up-alt"></i></a>
-    </div>
+    </div> */}
     
     
     </Fragment>
