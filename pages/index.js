@@ -35,7 +35,7 @@ export default function Home({ tableData, SEO }) {
                     <div className="col-lg-4 col-md-6 col-sm-8">
                         <div className="single-services mb-30">
                             <div className="features-icon">
-                                <img src="/img/icon/icon1.svg" alt=""/>
+                                <Image src="/img/icon/icon1.svg" alt="icon-1" width={250} height={250} />
                             </div>
                             <div className="features-caption">
                                 <h3>Desa Berbasis Wisata</h3>
@@ -46,7 +46,7 @@ export default function Home({ tableData, SEO }) {
                     <div className="col-lg-4 col-md-6 col-sm-8">
                         <div className="single-services mb-30">
                             <div className="features-icon">
-                                <img src="/img/icon/icon2.svg" alt=""/>
+                                <Image src="/img/icon/icon2.svg" alt="icon-2" width={250} height={250} />
                             </div>
                             <div className="features-caption">
                                 <h3>Desa Berbasis Lingkungan</h3>
@@ -57,7 +57,7 @@ export default function Home({ tableData, SEO }) {
                     <div className="col-lg-4 col-md-6 col-sm-8">
                         <div className="single-services mb-30">
                             <div className="features-icon">
-                                <img src="/img/icon/icon3.svg" alt=""/>
+                                <Image src="/img/icon/icon3.svg" alt="icon-3" width={250} height={250} />
                             </div>
                             <div className="features-caption">
                                 <h3>Desa Berbasis Gotong Royong</h3>
@@ -86,7 +86,7 @@ export default function Home({ tableData, SEO }) {
                                     <div key={data.id} className="col-lg-6 col-md-6 col-sm-8">
                                         <div className="single-services mb-30">
                                             <div className="features-icon">
-                                                <img src="/img/icon/icon1.svg" alt=""/>
+                                                <Image src="/img/icon/icon1.svg" alt="icon-1" width={50} height={50} />
                                             </div>
                                             <div className="features-caption">
                                                 <h3>{data.item}</h3>
@@ -166,7 +166,7 @@ export default function Home({ tableData, SEO }) {
                                     <div className="single-services mb-30">
                                         
                                         <div className="cat-icon">
-                                            <img src="/img/gallery/team1.png" alt=""/>
+                                            <Image src="/img/gallery/team1.png" alt="team-1" width={300} height={300} />
                                         </div>
                                         <div className="features-caption">
                                             <h3 style={{color: 'midnightblue'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repudiandae, molestiae dolorem aperiam inventore quasi nemo doloribus. Voluptate ratione aperiam accusamus dolore dignissimos quo, saepe laboriosam? Quas maiores unde incidunt.</h3>

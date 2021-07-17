@@ -36,7 +36,7 @@ export default function Home({ tableData, SEO }) {
                      <div className="row">
                         <div className="col-lg-6">
                            <div className="feature-img">
-                              <img className="img-fluid" src={tableData.foto} alt="" />
+                              <Image className="img-fluid" src={tableData.foto} alt="product-photo" width={400} height={400} />
                            </div>
                         </div>
                         <div className="col-lg-6">

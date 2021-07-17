@@ -25,20 +25,42 @@ const data = {
 	}]
 };
 
+const dataPengeluaran = {
+	labels: ['Pembangunan Jalan', 'Perbaikan Sarana Prasarana', 'Belanja Habis Pakai', 'Konsumsi Rapat', 'Transportasi'],
+	datasets: [{
+		label: 'Pemasukan Desa',
+        data: [150000000, 100000000, 80000000, 50000000, 20000000],
+		backgroundColor: [
+		'#FF6384',
+		'#36A2EB',
+		'#FFCE56',
+        '#FFAE56',
+        '#FA2384'
+		],
+		hoverBackgroundColor: [
+		'#FF6384',
+		'#36A2EB',
+		'#FFCE56',
+        '#FFAE56',
+        '#FA2384'
+		]
+	}]
+};
+
 export default function Home({ SEO }) {
   return (
     <div>
     <Layout seoData={SEO}>
     <main>
       
-      <section class="slider-area slider-area2">
-         <div class="slider-active">
+      <section className="slider-area slider-area2">
+         <div className="slider-active">
             
-            <div class="single-slider slider-height2">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-xl-8 col-lg-11 col-md-12">
-                        <div class="hero__caption hero__caption2">
+            <div className="single-slider slider-height2">
+               <div className="container">
+                  <div className="row">
+                     <div className="col-xl-8 col-lg-11 col-md-12">
+                        <div className="hero__caption hero__caption2">
                            <h1 data-animation="bounceIn" data-delay="0.2s">Laporan</h1>
                            
                         </div>
@@ -49,26 +71,26 @@ export default function Home({ SEO }) {
          </div>
       </section>
       
-      <section class="blog_area single-post-area section-padding">
-         <div class="container">
-            <div class="row justify-content-center">
-               <div class="col-lg-6 col-md-12 col-sm-12">
-                  <div class="row mr-5">
+      <section className="blog_area single-post-area section-padding">
+         <div className="container">
+            <div className="row justify-content-center">
+               <div className="col-lg-6 col-md-12 col-sm-12">
+                  <div className="row mr-5">
                      <p>Data Pemasukan Desa</p>
                      <Pie
                         data={data}
-                        width={400}
-                        height={400}
+                        width={300}
+                        height={300}
                     />
                   </div>
                </div>
-               <div class="col-lg-6 col-md-12 col-sm-12">
-                  <div class="row ml-5">
+               <div className="col-lg-6 col-md-12 col-sm-12">
+                  <div className="row ml-5">
                      <p>Data Pengeluaran Desa</p>
                      <Pie
-                        data={data}
-                        width={400}
-                        height={400}
+                        data={dataPengeluaran}
+                        width={300}
+                        height={300}
                     />
                   </div>
                </div>

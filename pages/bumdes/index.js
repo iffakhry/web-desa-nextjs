@@ -66,7 +66,8 @@ export default function Home({ tableData, SEO }) {
                             <div className="properties properties2 mb-30">
                                 <div className="properties__card">
                                     <div className="properties__img overlay1">
-                                        <a href="#"><img src={data.foto} alt=""/></a>
+                                        {/* <Image className="img-fluid" src={tableData.foto} alt="product-photo" width={400} height={400} /> */}
+                                        <Image src={data.foto} alt={`foto-${data.id}`} layout="responsive" width={100} height={100} />
                                     </div>
                                     <div className="properties__caption">
                                         <p>{data.jenis}</p>
@@ -82,7 +83,7 @@ export default function Home({ tableData, SEO }) {
                                                 <p style={{color: 'tomato'}}>Rp. <span style={{color: 'tomato'}}>{data.harga}</span></p>
                                             </div>
                                         </div>
-                                        <Link href={`bumdes/${data.id}`} passHref><button className="border-btn border-btn2">Lihat Selengkapnya</button></Link>
+                                        <Link href={`/bumdes/${data.id}`} passHref><button className="border-btn border-btn2">Lihat Selengkapnya</button></Link>
                                     </div>
                                 </div>
                             </div>
@@ -274,7 +275,7 @@ export async function getStaticProps() {
   );
   const allProducts = await getProducts.json();
   const tableData = allProducts;
-//   console.log("datanya",tableData);
+  console.log("datanya",tableData);
   const title = "Desa Rejo";
   const author = "Fakhry";
   const SEO = {
