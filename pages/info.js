@@ -90,7 +90,7 @@ export async function getStaticProps() {
     openGraph: {
       type: "website",
       locale: "id_ID",
-      url: "https://desa-rejo.com",
+      url: "https://web-desa-rejo.vercel.app",
       title,
       site_name: "desa-rejo",
     },
